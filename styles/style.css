@@ -1,24 +1,18 @@
-:root{
-    font-size: 15px;
-}
-
 /*@media screen and (min-width: 320px) {*/
-    /*:root{*/
-        /*font-size: 16px;*/
-    /*}*/
+/*:root{*/
+/*font-size: 16px;*/
+/*}*/
 /*}*/
 
 /*@media screen and (min-width: 720px) {*/
-    /*:root{*/
-        /*font-size: 18px;*/
-    /*}*/
+/*:root{*/
+/*font-size: 18px;*/
+/*}*/
 /*}*/
 
 html, body {
-    font-size: 1rem;
-    /*font-size: 14px;*/
-    /*height: 100%;*/
-    height: 100vh;
+    font-size: 16px;
+    height: 100%;
 }
 
 body {
@@ -28,14 +22,8 @@ body {
 }
 
 .main_widget {
-    /*min-width: 260px;*/
-    /*min-height: 190px;*/
-    min-width: 18rem;
-    min-height: 17rem;
-    width: 44rem;
-    /*!*height: 28rem;*!*/
-    /*!*width: 80vh;*!*/
-    height: 70vh;
+    width: 613px;
+    height: 409px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -45,20 +33,14 @@ body {
 
 .square {
     flex: 1 0 33.3334%;
-    /*width: 33.3334%;*/
     height: 50%;
-    display: flex;
-    font-family: Arial sans-serif;
-    color: white;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
     margin: auto;
 }
 
-
 .square > img {
+    margin: 10px;
     width: 45%;
 }
 
@@ -68,10 +50,6 @@ body {
 
 .square:hover label {
     display: none;
-}
-
-.square:hover {
-
 }
 
 .square:hover .details {
@@ -85,15 +63,22 @@ body {
     justify-content: space-around;
     align-items: center;
     box-shadow: inset 0px 0px 40px -20px black;
+    padding: 10px;
+    box-sizing: border-box;
+    /*margin-top: 5px;*/
 }
 
-.rectangle{
+.block {
     display: flex;
     font-family: Arial sans-serif;
+    font-weight: bold;
     color: white;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+
+.rectangle {
+    justify-content: space-around;
     height: 100%;
     width: auto;
     font-size: 0.8rem;
@@ -109,16 +94,30 @@ body {
 
 /*.square__block--light-blue { background-color: #00C0E2; }*/
 
-.light-blue { background-color: #00C0E2; }
+.light-blue {
+    background-color: #00C0E2;
+}
 
-.green { background-color: #5AD998; }
+.green {
+    background-color: #5AD998;
+}
 
-.blue { background-color: #7558F8; }
+.blue {
+    background-color: #7558F8;
+}
 
-.orange { background-color: #E9C14D; }
+.orange {
+    background-color: #E9C14D;
+}
 
-.red { background-color: #E55679; }
+.red {
+    background-color: #E55679;
+}
 
-.dark_red { background-color: #C94B6B; }
+.dark_red {
+    background-color: #C94B6B;
+}
 
-.violet { background-color: #CB70D6; }
+.violet {
+    background-color: #CB70D6;
+}
