@@ -1,15 +1,3 @@
-/*@media screen and (min-width: 320px) {*/
-/*:root{*/
-/*font-size: 16px;*/
-/*}*/
-/*}*/
-
-/*@media screen and (min-width: 720px) {*/
-/*:root{*/
-/*font-size: 18px;*/
-/*}*/
-/*}*/
-
 html, body {
     font-size: 16px;
     height: 100%;
@@ -24,6 +12,7 @@ body {
 .main_widget {
     width: 613px;
     height: 409px;
+    min-width: 613px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -40,12 +29,12 @@ body {
 }
 
 .square > img {
-    margin: 10px;
-    width: 45%;
+    margin: 15px;
+    width: 42%;
 }
 
 .square:hover > img {
-    width: 40%;
+    width: 31%;
 }
 
 .square:hover label {
@@ -59,13 +48,13 @@ body {
 .details {
     display: none;
     width: 100%;
-    height: 45%;
+    height: 99px;
     justify-content: space-around;
     align-items: center;
     box-shadow: inset 0px 0px 40px -20px black;
-    padding: 10px;
+    padding: 15px 17px 8px 18px;
     box-sizing: border-box;
-    /*margin-top: 5px;*/
+    margin-bottom: -10px;
 }
 
 .block {
@@ -80,19 +69,12 @@ body {
 .rectangle {
     justify-content: space-around;
     height: 100%;
-    width: auto;
     font-size: 0.8rem;
 }
 
 .rectangle img {
-    width: 43%;
+    width: 53%;
 }
-
-/*.block__element--modyfier{*/
-
-/*}*/
-
-/*.square__block--light-blue { background-color: #00C0E2; }*/
 
 .light-blue {
     background-color: #00C0E2;
