@@ -1,0 +1,124 @@
+:root{
+    font-size: 15px;
+}
+
+/*@media screen and (min-width: 320px) {*/
+    /*:root{*/
+        /*font-size: 16px;*/
+    /*}*/
+/*}*/
+
+/*@media screen and (min-width: 720px) {*/
+    /*:root{*/
+        /*font-size: 18px;*/
+    /*}*/
+/*}*/
+
+html, body {
+    font-size: 1rem;
+    /*font-size: 14px;*/
+    /*height: 100%;*/
+    height: 100vh;
+}
+
+body {
+    background: fixed url('../img/background.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+}
+
+.main_widget {
+    /*min-width: 260px;*/
+    /*min-height: 190px;*/
+    min-width: 18rem;
+    min-height: 17rem;
+    width: 44rem;
+    /*!*height: 28rem;*!*/
+    /*!*width: 80vh;*!*/
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    box-shadow: 0px 0px 55px 5px black;
+}
+
+.square {
+    flex: 1 0 33.3334%;
+    /*width: 33.3334%;*/
+    height: 50%;
+    display: flex;
+    font-family: Arial sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+
+.square > img {
+    width: 45%;
+}
+
+.square:hover > img {
+    width: 40%;
+}
+
+.square:hover label {
+    display: none;
+}
+
+.square:hover {
+
+}
+
+.square:hover .details {
+    display: flex;
+}
+
+.details {
+    display: none;
+    width: 100%;
+    height: 45%;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: inset 0px 0px 40px -20px black;
+}
+
+.rectangle{
+    display: flex;
+    font-family: Arial sans-serif;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    font-size: 0.8rem;
+}
+
+.rectangle img {
+    width: 43%;
+}
+
+/*.block__element--modyfier{*/
+
+/*}*/
+
+/*.square__block--light-blue { background-color: #00C0E2; }*/
+
+.light-blue { background-color: #00C0E2; }
+
+.green { background-color: #5AD998; }
+
+.blue { background-color: #7558F8; }
+
+.orange { background-color: #E9C14D; }
+
+.red { background-color: #E55679; }
+
+.dark_red { background-color: #C94B6B; }
+
+.violet { background-color: #CB70D6; }
