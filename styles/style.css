@@ -92,11 +92,21 @@ body {
     -webkit-justify-content: space-around;
     height: 100%;
     font-size: 0.8rem;
+    min-width: 1%;
 }
 
 .rectangle img {
     width: 53%;
     min-height: 1%;
+}
+
+.details ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.details li {
+    list-style-type: none; /* Убираем маркеры */
 }
 
 .light-blue {

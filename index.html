@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Weather widget</title>
+        <link href="styles/normalize.css" rel="stylesheet">
         <link href="styles/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class=main_widget>
+        <section class=main_widget>
             <div class="block square light-blue">
                 <img src="img/cloud_rain.PNG" alt="cloud_rain">
                 <label>CHICAGO / 23&#176;</label>
@@ -27,32 +28,32 @@
                 <img src="img/cloud_cat.PNG" alt="cloud_cat">
                 <label>NARNIA / 600&#176;</label>
                 <div class="details dark_red">
-                    <div class="block rectangle">
-                        <span>MON</span>
-                        <img src="img/cloud_rain.PNG" alt="cloud_rain">
-                        <span>22&#176;</span>
-                    </div>
-                    <div class="block rectangle">
-                        <span>TUE</span>
-                        <img src="img/cloud_rain.PNG" alt="cloud_rain">
-                        <span>19&#176;</span>
-                    </div>
-                    <div class="block rectangle">
-                        <span>WEN</span>
-                        <img src="img/cloud.PNG" alt="cloud">
-                        <span>18&#176;</span>
-                    </div>
-                    <div class="block rectangle">
-                        <span>THU</span>
-                        <img src="img/cloud_sun.PNG" alt="cloud_sun">
-                        <span>14&#176;</span>
-                    </div>
+                    <ul class="block rectangle">
+                        <li><span>MON</span></li>
+                        <li><img src="img/cloud_rain.PNG" alt="cloud_rain"></li>
+                        <li><span>22&#176;</span></li>
+                    </ul>
+                    <ul class="block rectangle">
+                        <li><span>TUE</span></li>
+                        <li><img src="img/cloud_rain.PNG" alt="cloud_rain"></li>
+                        <li><span>19&#176;</span></li>
+                    </ul>
+                    <ul class="block rectangle">
+                        <li><span>WEN</span></li>
+                        <li><img src="img/cloud.PNG" alt="cloud"></li>
+                        <li><span>18&#176;</span></li>
+                    </ul>
+                    <ul class="block rectangle">
+                        <li><span>THU</span></li>
+                        <li><img src="img/cloud_sun.PNG" alt="cloud_sun"></li>
+                        <li><span>14&#176;</span></li>
+                    </ul>
                 </div>
             </div>
             <div class="block square violet">
                 <img src="img/cloud.PNG" alt="cloud">
                 <label>SAN JOSE / 47&#176;</label>
             </div>
-        </div>
+        </section>
     </body>
 </html>
