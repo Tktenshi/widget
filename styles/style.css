@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant:400,600,700|Heebo:400,500,700|Roboto:500,700|Source+Sans+Pro:400,600,700');
 
+@font-face {
+    font-family: 'Avenir Next LT Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Bold'), url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro Demi';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Demi'), url('AvenirNextLTPro-Demi.woff') format('woff');
+}
+
 html, body {
     font: 500 17px 'Heebo', sans-serif;
+    /*font: 16px 'Avenir Next LT Pro Bold', sans-serif;*/
+    /*font: 16px 'Avenir Next LT Pro Demi', sans-serif;*/
     font-stretch: ultra-expanded;
     letter-spacing: 0.4px;
     height: 100%;
@@ -177,4 +193,48 @@ body {
 
 .violet {
     background-color: #CB70D6;
+}
+
+@media screen and (max-width: 800px) /*and (max-height: 601px)*/ and (orientation: landscape) and (max-aspect-ratio: 7/5) {
+    body, html {
+        font-size: 23px;
+    }
+
+    .main-widget_img {
+        margin: -0.3rem;
+    }
+
+    .details_rectangle {
+        width: 24%;
+    }
+
+    .main-widget {
+        width: 780px;
+        height: 520px;
+        border: 3px solid red;
+    }
+}
+
+@media screen and (max-device-width: 800px)and /*(max-device-height: 601px)and*/ (orientation: landscape) and (max-device-aspect-ratio: 9/5)  {
+    body, html {
+        font-size: 23px;
+    }
+
+    .main-widget_img {
+        margin: -0.3rem;
+    }
+
+    .details_rectangle {
+        width: 24%;
+    }
+
+    .main-widget {
+        width: 780px;
+        height: 520px;
+        border: 3px solid red;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-device-aspect-ratio: 12/5)  {
+
 }
