@@ -10,27 +10,26 @@ html, body {
 body {
     display: flex;
     background: fixed url('../img/background.png') no-repeat center center;
-    background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .main-widget {
     display: flex;
-    flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     height: 409px;
     width: 613px;
-    min-width: 613px;
-    align-content: center;
     -webkit-align-content: center;
+    align-content: center;
     margin: auto;
-    box-shadow: 0px 0px 55px 5px black;
     -moz-box-shadow: 0px 0px 55px 5px black;
     -o-box-shadow: 0px 0px 55px 5px black;
     -webkit-box-shadow: 0px 0px 55px 5px black;
+    box-shadow: 0px 0px 55px 5px black;
 }
 
 .main-widget_square {
@@ -50,17 +49,17 @@ body {
     -webkit-justify-content: center;
     height: 48%;
     width: 100%;
-    align-items: center;
     -webkit-align-items: center;
+    align-items: center;
     /*padding: 16px 18px 8px 19px;*/
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     /*margin: 11px auto -16px;*/
-    box-shadow: inset 0px 0px 40px -20px black;
     -moz-box-shadow: inset 0px 0px 40px -20px black;
     -o-box-shadow: inset 0px 0px 40px -20px black;
     -webkit-box-shadow: inset 0px 0px 40px -20px black;
+    box-shadow: inset 0px 0px 40px -20px black;
 }
 
 .block {
@@ -74,14 +73,14 @@ body {
 }
 
 .details_rectangle {
-    font-size: 0.8rem;
-    justify-content: center;
+    font-size: 0.7rem;
     -webkit-justify-content: center;
-    height: 70%;
-    box-sizing: border-box;
+    justify-content: center;
+    height: 100%;
+    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    /*width: 25%;*/
-    min-width: 20%;
+    box-sizing: border-box;
+    width: 20%;
 }
 
 .square_details ul {
@@ -94,58 +93,63 @@ body {
 }
 
 .details-rectangle_img {
-    height: 40%;
-    width: 55%;
-    background: no-repeat url('../img/icons-sprite.PNG')center center;
-    /*background-size: contain;*/
-    background-size: auto 92%;
-}
-
-.main-widget_img{
-    height: 44%;
-    width: 44%;
-    margin: 8px;
-    background: url('../img/icons-sprite.PNG') no-repeat center 9%;
-    /*background-size: contain;*/
-}
-
-.main-widget_img--small{
-    height: 52%;
-    width: 31%;
+    height: 1.9rem;
+    width: 1.6rem;
     background: url('../img/icons-sprite.PNG') no-repeat center center;
-    background-size: auto 83%;
+    /*background-size: contain;*/
+    background-size: 9rem;
 }
 
-.img--cloud-rain{
-    /*background-image: url('../img/cloud_rain.PNG');*/
-    background-position: 39.4% 90%;
+.main-widget_img {
+    height: 6rem;
+    width: 6rem;
+    margin: 0.1rem;
+    background: url('../img/icons-sprite.PNG') no-repeat;
+    background-size: 33.85rem;
 }
 
-.img--cloud-fog{
-    /*background-image: url('../img/cloud_fog.PNG');*/
-    background-position: 59.3% 90%;
+.main-widget_img--small {
+    height: 52%;
+    width: 4.4rem;
+    background: url('../img/icons-sprite.PNG') no-repeat center center;
+    background-size: 27.7rem;
 }
 
-.img--cloud-sun{
-    /*background-image: url('../img/cloud_sun.PNG');*/
-    background-position: 78.6% 85%;
+.img--cloud-rain {
+    background-position: -10.9rem -0.6rem;
 }
 
-.img--cloud_sun-snow{
-    /*background-image: url('../img/cloud_sun_snow.PNG');*/
-    background-position: 18.5% 82%;
+.img--cloud-fog {
+    background-position: -16.6rem -0.68rem;
 }
 
-.img--cloud{
-    /*background-image: url('../img/cloud.PNG');*/
-    background-position: 99.3% 65%;
+.img--cloud-sun {
+    background-position: -22.15rem -0.6rem;
 }
 
-.img--cloud-cat{
-    /*background-image: url('../img/cloud_cat.PNG');*/
-    background-position: 1.3% 59%;
+.img--cloud_sun-snow {
+    background-position: -5rem -0.6rem;
 }
 
+.img--cloud {
+    background-position: -28rem -0.41rem;
+}
+
+.img--cloud-cat {
+    background-position: -0.1rem;
+}
+
+.img--cloud-rain-small {
+    background-position: -2.9rem;
+}
+
+.img--cloud-small {
+    background-position: -7.5rem;
+}
+
+.img--cloud-sun-small {
+    background-position: -5.87rem;
+}
 
 .light-blue {
     background-color: #00C0E2;
