@@ -113,6 +113,9 @@ body {
     width: 1.6rem;
     background: url('../img/icons-sprite.PNG') no-repeat center center;
     /*background-size: contain;*/
+    -moz-background-size: 9rem;
+    -o-background-size: 9rem;
+    -webkit-background-size: 9rem;
     background-size: 9rem;
 }
 
@@ -121,6 +124,9 @@ body {
     width: 6rem;
     margin: 0.1rem;
     background: url('../img/icons-sprite.PNG') no-repeat;
+    -moz-background-size: 33.85rem;
+    -o-background-size: 33.85rem;
+    -webkit-background-size: 33.85rem;
     background-size: 33.85rem;
 }
 
@@ -128,6 +134,9 @@ body {
     height: 52%;
     width: 4.35rem;
     background: url('../img/icons-sprite.PNG') no-repeat center center;
+    -moz-background-size: 27.7rem;
+    -o-background-size: 27.7rem;
+    -webkit-background-size: 27.7rem;
     background-size: 27.7rem;
 }
 
