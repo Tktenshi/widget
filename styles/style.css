@@ -24,6 +24,8 @@ html, body {
 }
 
 body {
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     background: fixed url('../img/background.png') no-repeat center center;
     -moz-background-size: cover;
@@ -33,7 +35,9 @@ body {
 }
 
 .main-widget {
-    display: flex;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -60,7 +64,9 @@ body {
 }
 
 .square_details {
-    display: flex;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
     justify-content: center;
     -webkit-justify-content: center;
     height: 48%;
@@ -79,7 +85,9 @@ body {
 }
 
 .block {
-    display: flex;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
     flex-direction: column;
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
