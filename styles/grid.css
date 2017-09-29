@@ -10,22 +10,31 @@ html, body {
 
 body {
     display: grid;
-    grid: 409px / 613px;
-    place-content: center center;
+    /*grid: 409px / 613px;*/
+    /*place-content: center center;*/
     /*grid: calc(80vmin / 3 * 2) / 80vmin;;*/
     background: fixed url('../img/background.png') no-repeat center center;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+            ". a a ."
+            ". a a .";
 }
 
 .main-widget {
     display: grid;
-    width: 100%;
-    height: 100%;
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
     grid: repeat(2, minmax(8rem, 1fr)) / repeat(3, minmax(8rem, 1fr));
-    margin: auto;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    width: 613px;
+    height: 409px;
     -moz-box-shadow: 0 0 55px 5px black;
     -o-box-shadow: 0 0 55px 5px black;
     -webkit-box-shadow: 0 0 55px 5px black;
@@ -165,4 +174,55 @@ li {
 
 .violet {
     background-color: #CB70D6;
+}
+
+@media screen and (max-width: 1200px) and (orientation: landscape), screen and (max-device-width: 1200px) and (orientation: landscape) {
+    body, html {
+        font-size: 4.8vh;
+    }
+
+    .main-widget_img {
+        margin: -0.3rem;
+    }
+
+    /*.details_block-rectangle {*/
+        /*width: 24%;*/
+    /*}*/
+
+    .main-widget {
+        max-width: 95vw;
+        max-height: calc(95vw / 3 * 2);
+        height: 80vh;
+        width: calc(80vh / 2 * 3);
+        /*border: 3px solid red;*/
+    }
+}
+
+@media screen and (orientation: portrait) {
+    body, html {
+        font-size: 5vw;
+    }
+
+    .main-widget_img {
+        margin: -0.3rem;
+    }
+
+    /*.details_block-rectangle {*/
+        /*width: 24%;*/
+    /*}*/
+
+    .main-widget {
+        max-height: 95vh;
+        max-width: calc(95vh / 3 * 2);
+        height: calc(80vw / 2 * 3);
+        width: 80vw;
+        grid: repeat(3, minmax(8rem, 1fr)) / repeat(2, minmax(8rem, 1fr));
+        /*border: 3px solid blue;*/
+    }
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 12/10), screen and (min-device-aspect-ratio: 8/10) and (max-device-aspect-ratio: 1/1), screen and (min-aspect-ratio: 8/10) and (max-aspect-ratio: 1/1) {
+    body, html {
+        font-size: 4vmin;
+    }
 }

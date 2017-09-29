@@ -85,3 +85,11 @@ body {
     -ms-grid-column: 1;
     -ms-grid-row: 2;
 }
+
+@media screen and (orientation: portrait) {
+    .main-widget {
+        -ms-grid-columns: minmax(8rem, 1fr) minmax(8rem, 1fr);
+        -ms-grid-rows: minmax(8rem, 1fr) minmax(8rem, 1fr) minmax(8rem, 1fr);
+        /*border: 3px solid blue;*/
+    }
+}
