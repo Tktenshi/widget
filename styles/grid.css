@@ -9,29 +9,145 @@ html, body {
 
 body {
     display: grid;
+    grid: 409px / 613px;
+    place-content: center center;
+    /*grid: calc(80vmin / 3 * 2) / 80vmin;;*/
+
     background: fixed url('../img/background.png') no-repeat center center;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 100%;
 }
 
 .main-widget {
     display: grid;
-    height: 409px;
-    width: 613px;
-
-    grid-template-columns: repeat(auto-fit, minmax(-webkit-max-content, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
-    grid-template-rows: auto minmax(50px, 50vh) 5em;
-
-
-    /*-webkit-align-content: center;*/
-    /*align-content: center;*/
+    width: 100%;
+    height: 100%;
+    grid: repeat(2, minmax(8rem, 1fr)) / repeat(3, minmax(8rem, 1fr));
     margin: auto;
-    -moz-box-shadow: 0px 0px 55px 5px black;
-    -o-box-shadow: 0px 0px 55px 5px black;
-    -webkit-box-shadow: 0px 0px 55px 5px black;
-    box-shadow: 0px 0px 55px 5px black;
+    -moz-box-shadow: 0 0 55px 5px black;
+    -o-box-shadow: 0 0 55px 5px black;
+    -webkit-box-shadow: 0 0 55px 5px black;
+    box-shadow: 0 0 55px 5px black;
+}
+
+.main-widget_square {
+    justify-content: center;
+    -webkit-justify-content: center;
+    text-align: center;
+}
+
+.block {
+    display: grid;
+    /*grid-auto-flow: column;*/
+    color: white;
+    align-content:center;
+}
+
+
+
+.square_details ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.square_details li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+/*.details-rectangle_img {*/
+    /*height: 1.9rem;*/
+    /*width: 1.6rem;*/
+    /*background: url('../img/icons-sprite.PNG') no-repeat center center;*/
+    /*!*background-size: contain;*!*/
+    /*-moz-background-size: 9rem;*/
+    /*-o-background-size: 9rem;*/
+    /*-webkit-background-size: 9rem;*/
+    /*background-size: 9rem;*/
+/*}*/
+
+.main-widget_img {
+    height: 6rem;
+    width: 6rem;
+    margin: 0.1rem;
+    background: url('../img/icons-sprite.PNG') no-repeat;
+    -moz-background-size: 33.85rem;
+    -o-background-size: 33.85rem;
+    -webkit-background-size: 33.85rem;
+    background-size: 33.85rem;
+}
+
+.main-widget_img--small {
+    height: 52%;
+    width: 4.35rem;
+    background: url('../img/icons-sprite.PNG') no-repeat center center;
+    -moz-background-size: 27.7rem;
+    -o-background-size: 27.7rem;
+    -webkit-background-size: 27.7rem;
+    background-size: 27.7rem;
+}
+
+.img--cloud-rain {
+    background-position: -10.9rem -0.6rem;
+}
+
+.img--cloud-fog {
+    background-position: -16.6rem -0.68rem;
+}
+
+.img--cloud-sun {
+    background-position: -22.15rem -0.6rem;
+}
+
+.img--cloud_sun-snow {
+    background-position: -5rem -0.6rem;
+}
+
+.img--cloud {
+    background-position: -28rem -0.41rem;
+}
+
+.img--cloud-cat {
+    background-position: -0.1rem;
+}
+
+.img--cloud-rain-small {
+    background-position: -2.9rem;
+}
+
+.img--cloud-small {
+    background-position: -7.5rem;
+}
+
+.img--cloud-sun-small {
+    background-position: -5.87rem;
+}
+
+.light-blue {
+    background-color: #00C0E2;
+}
+
+.green {
+    background-color: #5AD998;
+}
+
+.blue {
+    background-color: #7558F8;
+}
+
+.orange {
+    background-color: #E9C14D;
+}
+
+.red {
+    background-color: #E55679;
+}
+
+.dark-red {
+    background-color: #C94B6B;
+}
+
+.violet {
+    background-color: #CB70D6;
 }
