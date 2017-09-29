@@ -56,8 +56,6 @@ body {
     flex: 1 0 33.3334%;
     -ms-flex: 1 0 33.3334%;
     -webkit-flex: 1 0 33.3334%;
-    justify-content: center;
-    -webkit-justify-content: center;
     text-align: center;
     height: 50%;
     margin: auto;
@@ -88,6 +86,8 @@ body {
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
     display: inline-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
     flex-direction: column;
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
@@ -98,13 +98,11 @@ body {
 
 .details_rectangle {
     font-size: 0.7rem;
-    -webkit-justify-content: center;
-    justify-content: center;
     height: 100%;
+    width: 20%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 20%;
 }
 
 .square_details ul {
