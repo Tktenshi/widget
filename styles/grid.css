@@ -18,14 +18,15 @@ body {
 }
 
 .main-widget {
-    /*display: -ms-inline-flexbox;*/
-    /*display: -webkit-inline-flex;*/
-    /*display: inline-flex;*/
-    /*-ms-flex-wrap: wrap;*/
-    /*-webkit-flex-wrap: wrap;*/
-    /*flex-wrap: wrap;*/
+    display: grid;
     height: 409px;
     width: 613px;
+
+    grid-template-columns: repeat(auto-fit, minmax(-webkit-max-content, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
+    grid-template-rows: auto minmax(50px, 50vh) 5em;
+
+
     /*-webkit-align-content: center;*/
     /*align-content: center;*/
     margin: auto;
