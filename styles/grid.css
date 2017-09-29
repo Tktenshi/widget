@@ -32,17 +32,22 @@ body {
     box-shadow: 0 0 55px 5px black;
 }
 
-.main-widget_square {
-    justify-content: center;
-    -webkit-justify-content: center;
-    text-align: center;
+.main-widget_block-square {
+    /*justify-content: center;*/
+    /*-webkit-justify-content: center;*/
+    /*text-align: center;*/
+    /*grid: repeat(2, 1fr) / 1fr;*/
 }
 
 .block {
     display: grid;
     /*grid-auto-flow: column;*/
     color: white;
-    align-content:center;
+    /*align-content:center;*/
+
+    place-content:center center;
+    place-items:center center;
+    /*place-self:center center;*/
 }
 
 

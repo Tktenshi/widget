@@ -52,7 +52,7 @@ body {
     box-shadow: 0px 0px 55px 5px black;
 }
 
-.main-widget_square {
+.main-widget_block-square {
     flex: 1 0 33.3334%;
     -ms-flex: 1 0 33.3334%;
     -webkit-flex: 1 0 33.3334%;
@@ -96,7 +96,7 @@ body {
     color: white;
 }
 
-.details_rectangle {
+.details_block-rectangle {
     font-size: 0.7rem;
     -webkit-justify-content: center;
     justify-content: center;
@@ -226,7 +226,7 @@ body {
         margin: -0.3rem;
     }
 
-    .details_rectangle {
+    .details_block-rectangle {
         width: 24%;
     }
 
@@ -248,7 +248,7 @@ body {
         margin: -0.3rem;
     }
 
-    .details_rectangle {
+    .details_block-rectangle {
         width: 24%;
     }
 
@@ -260,7 +260,7 @@ body {
         /*border: 3px solid blue;*/
     }
 
-    .main-widget_square {
+    .main-widget_block-square {
         flex: 1 0 50%;
         -ms-flex: 1 0 50%;
         -webkit-flex: 1 0 50%;
