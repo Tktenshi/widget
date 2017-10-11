@@ -4,46 +4,60 @@
     <meta charset="utf-8">
     <title>Weather widget</title>
     <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/grid.css" rel="stylesheet">
-    <link href="styles/-ms-grid.css" rel="stylesheet" media="screen and (-ms-high-contrast: active), (-ms-high-contrast: none)"> <!-- IE10 IE11 -->
-</head>
+    <link href="styles/float.css" rel="stylesheet">
 <body>
 <div class=main-widget>
-    <div class="block main-widget_block-square light-blue">
-        <div class="main-widget_img img--cloud-rain"></div>
+    <div class="main-widget_square light-blue">
+        <div class="main-widget_square-img sprite img--cloud-rain"></div>
         <span>CHICAGO / 23&#176;</span>
     </div>
-    <div class="block main-widget_block-square green">
-        <div class="main-widget_img img--cloud-fog"></div>
+    <div class="main-widget_square green">
+        <div class="main-widget_square-img sprite img--cloud-fog"></div>
         <span>SEATTLE / 34&#176;</span>
     </div>
-    <div class="block main-widget_block-square blue">
-        <div class="main-widget_img img--cloud-sun"></div>
+    <div class="main-widget_square blue">
+        <div class="main-widget_square-img sprite img--cloud-sun"></div>
         <span>BROOKLYN / 55&#176;</span>
     </div>
-    <div class="block main-widget_block-square orange">
-        <div class="main-widget_img img--cloud_sun-snow"></div>
+    <div class="main-widget_square orange">
+        <div class="main-widget_square-img sprite img--cloud_sun-snow"></div>
         <span>PORTLAND / 27&#176;</span>
     </div>
-    <div class="block main-widget_block-square block-square--extend red">
-        <div class="main-widget_img--small img--cloud-cat"></div>
-        <ul class="block square_details dark-red">
-            <li><span>MON</span></li>
-            <li class="details-rectangle_img img--cloud-rain-small"></li>
-            <li><span>22&#176;</span></li>
-            <li><span>TUE</span></li>
-            <li class="details-rectangle_img img--cloud-rain-small"></li>
-            <li><span>19&#176;</span></li>
-            <li><span>WEN</span></li>
-            <li class="details-rectangle_img img--cloud-small"></li>
-            <li><span>18&#176;</span></li>
-            <li><span>THU</span></li>
-            <li class="details-rectangle_img img--cloud-sun-small"></li>
-            <li><span>14&#176;</span></li>
+    <div class="main-widget_square red">
+        <div class="main-widget_square-img--small sprite img--cloud-cat"></div>
+        <ul class="main-widget_details dark-red">
+            <li>
+                <ul class="main-widget_details-rectangle">
+                    <li><span>MON</span></li>
+                    <li class="main-widget_details-rectangle-img sprite img--cloud-rain-small"></li>
+                    <li><span>22&#176;</span></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="main-widget_details-rectangle">
+                    <li><span>TUE</span></li>
+                    <li class="main-widget_details-rectangle-img sprite img--cloud-rain-small"></li>
+                    <li><span>19&#176;</span></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="main-widget_details-rectangle">
+                    <li><span>WEN</span></li>
+                    <li class="main-widget_details-rectangle-img sprite img--cloud-small"></li>
+                    <li><span>18&#176;</span></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="main-widget_details-rectangle">
+                    <li><span>THU</span></li>
+                    <li class="main-widget_details-rectangle-img sprite img--cloud-sun-small"></li>
+                    <li><span>14&#176;</span></li>
+                </ul>
+            </li>
         </ul>
     </div>
-    <div class="block main-widget_block-square violet">
-        <div class="main-widget_img img--cloud"></div>
+    <div class="main-widget_square violet">
+        <div class="main-widget_square-img sprite img--cloud"></div>
         <span>SAN JOSE / 47&#176;</span>
     </div>
 </div>
