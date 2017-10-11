@@ -64,7 +64,7 @@ body {
 }
 
 .main-widget_square-img {
-    height: 6.2rem;
+    height: 70%;
     width: 5.5rem;
     -moz-background-size: 33.85rem;
     -o-background-size: 33.85rem;
@@ -100,23 +100,23 @@ ul {
 }
 
 .img--cloud-rain {
-    background-position: -11rem 0.05rem;
+    background-position: -11rem /*0.05rem*/;
 }
 
 .img--cloud-fog {
-    background-position: -17.2rem -0.35rem;
+    background-position: -17.2rem /*-0.35rem*/;
 }
 
 .img--cloud-sun {
-    background-position: -22.3rem -0.45rem;
+    background-position: -22.3rem /*-0.45rem*/;
 }
 
 .img--cloud_sun-snow {
-    background-position: -5.2rem -0.4rem;
+    background-position: -5.2rem /*-0.4rem*/;
 }
 
 .img--cloud {
-    background-position: -28.2rem -0.25rem;
+    background-position: -28.2rem /*-0.25rem*/;
 }
 
 .img--cloud-cat {
