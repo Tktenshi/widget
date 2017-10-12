@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:500');
+
+html, body {
+    font: 500 17px 'Heebo', sans-serif;
+    font-stretch: ultra-expanded;
+    color: white;
+    letter-spacing: 0.4px;
+    height: 100%;
+}
+
+body {
+    background: fixed url('../img/background.png') no-repeat center center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.main-widget {
+    height: 409px;
+    width: 612px;
+    -moz-box-shadow: 0 0 55px 5px black;
+    -o-box-shadow: 0 0 55px 5px black;
+    -webkit-box-shadow: 0 0 55px 5px black;
+    box-shadow: 0 0 55px 5px black;
+}
