@@ -4,52 +4,53 @@
     <meta charset="utf-8">
     <title>Weather widget</title>
     <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="styles/bootstrap4-grid.css" rel="stylesheet">
     <link href="styles/my-bootstrap.css" rel="stylesheet">
-<body>
-<div class=main-widget>
-    <div class="main-widget_square light-blue">
+<!--<body class="container justify-content-center align-items-center align-content-center align-self-center">-->
+<body class="row">
+<div class="main-widget row">
+    <div class="main-widget_square col-lg-4 col-md-6 col-sm-6 light-blue">
         <div class="main-widget_square-img sprite img--cloud-rain"></div>
         <span>CHICAGO / 23&#176;</span>
     </div>
-    <div class="main-widget_square green">
+    <div class="main-widget_square col-lg-4 col-md-6 col-sm-6 green">
         <div class="main-widget_square-img sprite img--cloud-fog"></div>
         <span>SEATTLE / 34&#176;</span>
     </div>
-    <div class="main-widget_square blue">
+    <div class="main-widget_square col-lg-4 col-md-6 col-sm-6 blue">
         <div class="main-widget_square-img sprite img--cloud-sun"></div>
         <span>BROOKLYN / 55&#176;</span>
     </div>
-    <div class="main-widget_square orange">
+    <div class="main-widget_square col-lg-4 col-md-6 col-sm-6 orange">
         <div class="main-widget_square-img sprite img--cloud_sun-snow"></div>
         <span>PORTLAND / 27&#176;</span>
     </div>
-    <div class="main-widget_square red">
+    <div class="main-widget_square col-lg-4 col-md-6 col-sm-6 red">
         <div class="main-widget_square-img--small sprite img--cloud-cat"></div>
-        <ul class="main-widget_details dark-red">
+        <ul class="main-widget_details dark-red row justify-content-around align-items-center">
             <li>
-                <ul class="main-widget_details-rectangle">
+                <ul class="main-widget_details-rectangle col">
                     <li><span>MON</span></li>
                     <li class="main-widget_details-rectangle-img sprite img--cloud-rain-small"></li>
                     <li><span>22&#176;</span></li>
                 </ul>
             </li>
             <li>
-                <ul class="main-widget_details-rectangle">
+                <ul class="main-widget_details-rectangle col">
                     <li><span>TUE</span></li>
                     <li class="main-widget_details-rectangle-img sprite img--cloud-rain-small"></li>
                     <li><span>19&#176;</span></li>
                 </ul>
             </li>
             <li>
-                <ul class="main-widget_details-rectangle">
+                <ul class="main-widget_details-rectangle col">
                     <li><span>WEN</span></li>
                     <li class="main-widget_details-rectangle-img sprite img--cloud-small"></li>
                     <li><span>18&#176;</span></li>
                 </ul>
             </li>
             <li>
-                <ul class="main-widget_details-rectangle">
+                <ul class="main-widget_details-rectangle col">
                     <li><span>THU</span></li>
                     <li class="main-widget_details-rectangle-img sprite img--cloud-sun-small"></li>
                     <li><span>14&#176;</span></li>
@@ -57,7 +58,7 @@
             </li>
         </ul>
     </div>
-    <div class="main-widget_square violet">
+    <div class="main-widget_square col-lg-4 col-md-6 col-sm-6 violet">
         <div class="main-widget_square-img sprite img--cloud"></div>
         <span>SAN JOSE / 47&#176;</span>
     </div>
