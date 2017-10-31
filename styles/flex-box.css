@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant:400,600,700|Heebo:400,500,700|Roboto:500,700|Source+Sans+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Heebo:500');
+/*@import url('https://fonts.googleapis.com/css?family=Assistant:400,600,700|Heebo:400,500,700|Roboto:500,700|Source+Sans+Pro:400,600,700');*/
 
-@font-face {
-    font-family: 'Avenir Next LT Pro Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir Next LT Pro Bold'), url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
-}
+/*@font-face {*/
+/*font-family: 'Avenir Next LT Pro Bold';*/
+/*font-style: normal;*/
+/*font-weight: normal;*/
+/*src: local('Avenir Next LT Pro Bold'), url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');*/
+/*}*/
 
-@font-face {
-    font-family: 'Avenir Next LT Pro Demi';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir Next LT Pro Demi'), url('AvenirNextLTPro-Demi.woff') format('woff');
-}
+/*@font-face {*/
+/*font-family: 'Avenir Next LT Pro Demi';*/
+/*font-style: normal;*/
+/*font-weight: normal;*/
+/*src: local('Avenir Next LT Pro Demi'), url('AvenirNextLTPro-Demi.woff') format('woff');*/
+/*}*/
 
 html, body {
     font: 500 17px 'Heebo', sans-serif;
@@ -50,6 +51,16 @@ body {
     -o-box-shadow: 0px 0px 55px 5px black;
     -webkit-box-shadow: 0px 0px 55px 5px black;
     box-shadow: 0px 0px 55px 5px black;
+}
+
+.main-widget_square-inp-weather {
+    width: 7rem;
+}
+
+.main-widget_square-btn-weather{
+    width: 7rem;
+    font: 500 1rem 'Heebo', sans-serif;
+    margin: 6px auto;
 }
 
 .main-widget_square {
@@ -128,12 +139,12 @@ body {
 .main-widget_img {
     height: 6rem;
     width: 6rem;
-    margin: 0.1rem;
-    background: url('../img/icons-sprite.PNG') no-repeat;
-    -moz-background-size: 33.85rem;
-    -o-background-size: 33.85rem;
-    -webkit-background-size: 33.85rem;
-    background-size: 33.85rem;
+    /*margin: 0.1rem;*/
+    background: no-repeat center center;
+    -moz-background-size: 6rem;
+    -o-background-size: 6rem;
+    -webkit-background-size: 6rem;
+    background-size: 6rem;
 }
 
 .main-widget_img--small {
@@ -144,30 +155,6 @@ body {
     -o-background-size: 27.7rem;
     -webkit-background-size: 27.7rem;
     background-size: 27.7rem;
-}
-
-.img--cloud-rain {
-    background-position: -10.9rem -0.6rem;
-}
-
-.img--cloud-fog {
-    background-position: -16.6rem -0.68rem;
-}
-
-.img--cloud-sun {
-    background-position: -22.15rem -0.6rem;
-}
-
-.img--cloud_sun-snow {
-    background-position: -5rem -0.6rem;
-}
-
-.img--cloud {
-    background-position: -28rem -0.41rem;
-}
-
-.img--cloud-cat {
-    background-position: -0.1rem;
 }
 
 .img--cloud-rain-small {

@@ -9,50 +9,56 @@
     <body>
         <div class=main-widget>
             <div class="block main-widget_square light-blue">
-                <div class="main-widget_img img--cloud-rain"></div>
-                CHICAGO / 23&#176;
+                <div class="main-widget_img"></div>
+                <span class="towns">CHICAGO / 23&#176;</span>
             </div>
             <div class="block main-widget_square green">
-                <div class="main-widget_img img--cloud-fog"></div>
-                SEATTLE / 34&#176;
+                <div class="main-widget_img"></div>
+                <span class="towns">SEATTLE / 34&#176;</span>
             </div>
             <div class="block main-widget_square blue">
-                <div class="main-widget_img img--cloud-sun"></div>
-                BROOKLYN / 55&#176;
+                <div class="main-widget_img"></div>
+                <span class="towns">BROOKLYN / 55&#176;</span>
             </div>
             <div class="block main-widget_square orange">
-                <div class="main-widget_img img--cloud_sun-snow"></div>
-                PORTLAND / 27&#176;
+                <div class="main-widget_img"></div>
+                <span class="towns">PORTLAND / 27&#176;</span>
             </div>
             <div class="block main-widget_square red">
-                <div class="main-widget_img--small img--cloud-cat"></div>
-                <div class="square_details dark-red">
-                    <ul class="block details_rectangle">
-                        <li><span>MON</span></li>
-                        <li class="details-rectangle_img img--cloud-rain-small"></li>
-                        <li><span>22&#176;</span></li>
-                    </ul>
-                    <ul class="block details_rectangle">
-                        <li><span>TUE</span></li>
-                        <li class="details-rectangle_img img--cloud-rain-small"></li>
-                        <li><span>19&#176;</span></li>
-                    </ul>
-                    <ul class="block details_rectangle">
-                        <li><span>WEN</span></li>
-                        <li class="details-rectangle_img img--cloud-small"></li>
-                        <li><span>18&#176;</span></li>
-                    </ul>
-                    <ul class="block details_rectangle">
-                        <li><span>THU</span></li>
-                        <li class="details-rectangle_img img--cloud-sun-small"></li>
-                        <li><span>14&#176;</span></li>
-                    </ul>
+                <div class="chooseCity">
+                    <label for="inpWeather">Enter city name</label>
+                    <input type="text" class="main-widget_square-inp-weather" id="inpWeather">
+                    <button class="main-widget_square-btn-weather">Get weather</button>
                 </div>
+                <!--<div class="main-widget_img&#45;&#45;small img&#45;&#45;cloud-cat"></div>-->
+                <!--<div class="square_details dark-red">-->
+                    <!--<ul class="block details_rectangle">-->
+                        <!--<li><span>MON</span></li>-->
+                        <!--<li class="details-rectangle_img img&#45;&#45;cloud-rain-small"></li>-->
+                        <!--<li><span>22&#176;</span></li>-->
+                    <!--</ul>-->
+                    <!--<ul class="block details_rectangle">-->
+                        <!--<li><span>TUE</span></li>-->
+                        <!--<li class="details-rectangle_img img&#45;&#45;cloud-rain-small"></li>-->
+                        <!--<li><span>19&#176;</span></li>-->
+                    <!--</ul>-->
+                    <!--<ul class="block details_rectangle">-->
+                        <!--<li><span>WEN</span></li>-->
+                        <!--<li class="details-rectangle_img img&#45;&#45;cloud-small"></li>-->
+                        <!--<li><span>18&#176;</span></li>-->
+                    <!--</ul>-->
+                    <!--<ul class="block details_rectangle">-->
+                        <!--<li><span>THU</span></li>-->
+                        <!--<li class="details-rectangle_img img&#45;&#45;cloud-sun-small"></li>-->
+                        <!--<li><span>14&#176;</span></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
             </div>
             <div class="block main-widget_square violet">
-                <div class="main-widget_img img--cloud"></div>
-                <label>SAN JOSE / 47&#176;</label>
+                <div class="main-widget_img"></div>
+                <span class="towns">SAN JOSE / 47&#176;</span>
             </div>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
