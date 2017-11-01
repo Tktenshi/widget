@@ -55,12 +55,24 @@ body {
 
 .main-widget_square-inp-weather {
     width: 7rem;
+    box-sizing: border-box;
+    margin: 6px auto;
+    text-align: center;
 }
 
-.main-widget_square-btn-weather{
+.main-widget_square-btn-weather {
     width: 7rem;
     font: 500 1rem 'Heebo', sans-serif;
-    margin: 6px auto;
+    margin: 2px auto;
+    box-sizing: border-box;
+}
+
+.main-widget_chooseCity {
+
+}
+
+.hide{
+    display: none;
 }
 
 .main-widget_square {
