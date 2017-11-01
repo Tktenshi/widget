@@ -3,6 +3,7 @@ var arrImgs = document.getElementsByClassName("main-widget_img");
 var btnWeath = document.getElementsByClassName("main-widget_square-btn-weather");
 var inpWeath = document.getElementsByClassName("main-widget_square-inp-weather")[0];
 var contWeath = document.getElementsByClassName("main-widget_chooseCity")[0];
+var blockSquare = document.getElementsByClassName("block main-widget_square red")[0];
 
 var appId = "&APPID=97576b3b2b2568b4461029ef47e84865";
 var settingsSquare = 3;
@@ -75,7 +76,7 @@ function showWeath(i, obj) {
     arrImgs[i].style.backgroundImage = "url('http://openweathermap.org/img/w/" + obj.icon + ".png')";
 }
 
-function chek() {
+function check() {
     if (inpWeath.value === "") {
         interval(displayWeather);
         show(settingsSquare);
@@ -86,7 +87,7 @@ function chek() {
 }
 
 btnWeath[0].onclick = function () {
-    if (chek()) {
+    if (check()) {
         interval(function () {
             if (inpWeath.value !== "")
                 send(inpWeath.value, query, params, showCustom);
@@ -115,7 +116,7 @@ function showCustom(aResponseText) {
 }
 
 btnWeath[1].onclick = function () {
-    if (chek()) {
+    if (check()) {
         interval(function () {
             if (inpWeath.value !== "")
                 send(inpWeath.value, "forecast", "", showDays);
@@ -123,12 +124,17 @@ btnWeath[1].onclick = function () {
     }
 };
 
-function getData(aResponseText) {
+function getData(aResponseItem) {
     var obj = {};
-    obj.t = Math.round(aResponseText.main.temp);
-    obj.icon = aResponseText.weather[0].icon;
-    obj.city = aResponseText.name;
+    obj.t = Math.round(aResponseItem.main.temp);
+    obj.icon = aResponseItem.weather[0].icon;
+    obj.city = aResponseItem.name;
     return obj;
+}
+
+function getDate(aResponseItem) {
+    var day = new Date(aResponseItem.dt_txt).getDay();
+    return weekDays[day].toUpperCase()
 }
 
 function showDays(aResponseText) {
@@ -136,8 +142,34 @@ function showDays(aResponseText) {
     hide(settingsSquare);
     inpWeath.value = aResponseText.city.name;
     for (var k = 0; k < countDays; k++) {
-        var day = new Date(aResponseText.list[k * 8].dt_txt).getDay();
-        arrTowns[k].innerHTML = weekDays[day].toUpperCase() + " / " + Math.round(aResponseText.list[k * 8].main.temp) + "&#176;";
-        arrImgs[k].style.backgroundImage = "url('http://openweathermap.org/img/w/" + aResponseText.list[k * 8].weather[0].icon + ".png')";
+        // var day = new Date(aResponseText.list[k * 8].dt_txt).getDay();
+        var obj = getData(aResponseText.list[k * 8]);
+        arrTowns[k].innerHTML = getDate(aResponseText.list[k * 8]) + " / " + obj.t + "&#176;";
+        arrImgs[k].style.backgroundImage = "url('http://openweathermap.org/img/w/" + obj.icon + ".png')";
     }
 }
+//
+// btnWeath[2].onclick = function () {
+//     if (check()) {
+//         interval(function () {
+//             if (inpWeath.value !== "")
+//                 send(inpWeath.value, "forecast", "&cnt=80", showWeeks);
+//         });
+//     }
+// };
+//
+// function showWeeks(aResponseText) {
+//     console.log(aResponseText);
+//     var html = "";
+//     for (var k = 0; k < 10; k++) {
+//         html += createHtml(getDate(aResponseText.list[k]));
+//     }
+//     blockSquare.innerHTML = "<div class='square_details'>" + html + "</div>";
+// }
+//
+// function createHtml(day) {
+//     contWeath.classList.add("hide");
+//     var item = "<ul class='block details_rectangle'><li><span>" + day.substr(0, 3) + "</span></li><li class='details-rectangle_img'></li><li><span>22&#176;</span></li></ul>"
+//     return item;
+//
+// }
